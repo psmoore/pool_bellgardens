@@ -1,7 +1,7 @@
 <!doctype html>
 <!-- UNOFFICIAL PREVIEW. Not a City of Bell Gardens website. A mock-up of https://www.bellgardens.org/our-city/about-bell-gardens/aquatic-center
      with the Dreamers Aquatics Center on one live Pool Relay schedule, in English and Spanish. -->
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,8 +14,12 @@
     try { saved = localStorage.getItem("bg-lang"); } catch (e) {}
     var lang = q || saved || "en";
     try { if (q) localStorage.setItem("bg-lang", q); } catch (e) {}
-    document.documentElement.lang = lang === "es" ? "es" : "en";
-    window.LANG = document.documentElement.lang;
+    // data-lang drives what is shown; lang is for screen readers. Chrome's translator rewrites
+    // lang (and would flip the page back), so visibility never depends on it.
+    lang = lang === "es" ? "es" : "en";
+    document.documentElement.lang = lang;
+    document.documentElement.setAttribute("data-lang", lang);
+    window.LANG = lang;
   })();
   window.I18N = {"Lap Swim": "Nado de vueltas", "Recreation Swim": "Nado recreativo", "Swim Lessons": "Clases de natación", "Aqua Aerobics": "Aqua aeróbicos", "Low Impact Aerobics": "Aeróbicos de bajo impacto", "Drop-In Water Polo": "Waterpolo libre", "Splash-Ball Water Polo": "Splash-Ball (waterpolo infantil)", "Southeast Aquatics Dolphins Swim Team": "Equipo de natación Southeast Aquatics Dolphins", "S.T.A.R.S. Swim Program": "Programa de natación S.T.A.R.S.", "Closed: Thanksgiving": "Cerrado: Día de Acción de Gracias", "Closed: swim competition": "Cerrado: competencia de natación", "In the water now": "En el agua ahora", "until": "hasta las", "Opens": "Abre a las", "from": "desde las", "Done for today": "Terminado por hoy", "Next": "Próximo", "Nothing scheduled": "Nada programado", "today": "hoy", "No hours published": "Sin horario publicado", "through": "hasta el", "all": "los", "of": "de", "lanes": "carriles", "Lap swim": "Vueltas", "Rec swim": "Recreativo", "Water fitness": "Ejercicio acuático", "Lessons & teams": "Clases y equipos", "Swim lessons": "Clases de natación", "classes": "clases"};
 </script>

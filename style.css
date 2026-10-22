@@ -9,8 +9,8 @@
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-html[lang="en"] [lang="es"], html[lang="es"] [lang="en"]{display:none}
-html[lang="en"] .lang-es, html[lang="es"] .lang-en{display:none}
+html[data-lang="en"] [lang="es"], html[data-lang="es"] [lang="en"]{display:none}
+html[data-lang="en"] .lang-es, html[data-lang="es"] .lang-en{display:none}
 body{margin:0;background:linear-gradient(180deg,#1b6fa3,#2d9ccf 340px,#e9f1f6 340px);color:var(--ink);font:16px/1.6 "Open Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
 a{color:var(--blue)}
 h1,h2,h3,.nav,.banner .bt{font-family:Montserrat,"Open Sans",system-ui,sans-serif}

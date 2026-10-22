@@ -179,7 +179,7 @@
   // Lesson slots come every half hour; unless someone is looking for lessons, one line says it.
   const LESSON = /lesson|academy|private|parent|mighty fish|mini fish|super fish|big fish|starfish|seahorse|otter|stroke and conditioning|adult swim (basics|refinement)/i;
   function foldLessons(sessions) {
-    const les = sessions.filter((o) => LESSON.test(o.title) && !/team|aquatics –/i.test(o.title));
+    const les = sessions.filter((o) => LESSON.test(o.orig || o.title) && !/team|aquatics –/i.test(o.orig || o.title));
     if (les.length < 3) return sessions;
     const a = les.reduce((m, o) => (o.start < m ? o.start : m), "99:99"), b = les.reduce((m, o) => (o.end > m ? o.end : m), "00:00");
     const row = { title: `${T("Swim lessons")} · ${les.length} ${T("classes")}`, start: a, end: b, kinds: ["learn"], laneText: "", parts: les, folded: true };

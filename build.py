@@ -79,7 +79,7 @@ POOLS = json.dumps([dict(slug="dreamers", name="Dreamers Aquatics Center", area=
 doc = f"""<!doctype html>
 <!-- UNOFFICIAL PREVIEW. Not a City of Bell Gardens website. A mock-up of {CITY}
      with the Dreamers Aquatics Center on one live Pool Relay schedule, in English and Spanish. -->
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -92,8 +92,12 @@ doc = f"""<!doctype html>
     try {{ saved = localStorage.getItem("bg-lang"); }} catch (e) {{}}
     var lang = q || saved || "en";
     try {{ if (q) localStorage.setItem("bg-lang", q); }} catch (e) {{}}
-    document.documentElement.lang = lang === "es" ? "es" : "en";
-    window.LANG = document.documentElement.lang;
+    // data-lang drives what is shown; lang is for screen readers. Chrome's translator rewrites
+    // lang (and would flip the page back), so visibility never depends on it.
+    lang = lang === "es" ? "es" : "en";
+    document.documentElement.lang = lang;
+    document.documentElement.setAttribute("data-lang", lang);
+    window.LANG = lang;
   }})();
   window.I18N = {json.dumps(I18N, ensure_ascii=False)};
 </script>
