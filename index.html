@@ -1,0 +1,98 @@
+<!doctype html>
+<!-- UNOFFICIAL PREVIEW. Not a City of Bell Gardens website. A mock-up of https://www.bellgardens.org/our-city/about-bell-gardens/aquatic-center
+     with the Dreamers Aquatics Center on one live Pool Relay schedule, in English and Spanish. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Dreamers Aquatics Center | Bell Gardens preview</title>
+<script>
+  // ?lang=es shows the Spanish page; the choice is remembered for the next visit.
+  (function () {
+    var q = new URLSearchParams(location.search).get("lang"), saved = null;
+    try { saved = localStorage.getItem("bg-lang"); } catch (e) {}
+    var lang = q || saved || "en";
+    try { if (q) localStorage.setItem("bg-lang", q); } catch (e) {}
+    document.documentElement.lang = lang === "es" ? "es" : "en";
+    window.LANG = document.documentElement.lang;
+  })();
+  window.I18N = {"Lap Swim": "Nado de vueltas", "Recreation Swim": "Nado recreativo", "Swim Lessons": "Clases de natación", "Aqua Aerobics": "Aqua aeróbicos", "Low Impact Aerobics": "Aeróbicos de bajo impacto", "Drop-In Water Polo": "Waterpolo libre", "Splash-Ball Water Polo": "Splash-Ball (waterpolo infantil)", "Southeast Aquatics Dolphins Swim Team": "Equipo de natación Southeast Aquatics Dolphins", "S.T.A.R.S. Swim Program": "Programa de natación S.T.A.R.S.", "Closed: Thanksgiving": "Cerrado: Día de Acción de Gracias", "Closed: swim competition": "Cerrado: competencia de natación", "In the water now": "En el agua ahora", "until": "hasta las", "Opens": "Abre a las", "from": "desde las", "Done for today": "Terminado por hoy", "Next": "Próximo", "Nothing scheduled": "Nada programado", "today": "hoy", "No hours published": "Sin horario publicado", "through": "hasta el", "all": "los", "of": "de", "lanes": "carriles", "Lap swim": "Vueltas", "Rec swim": "Recreativo", "Water fitness": "Ejercicio acuático", "Lessons & teams": "Clases y equipos", "Swim lessons": "Clases de natación", "classes": "clases"};
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="preview-note"><span lang="en"><b>Unofficial preview.</b> Not a City of Bell Gardens page &mdash; a mock-up of <a href="https://www.bellgardens.org/our-city/about-bell-gardens/aquatic-center" target="_blank" rel="noopener noreferrer">the Aquatics Center page</a> with the pool on one live schedule.</span><span lang="es"><b>Vista previa no oficial.</b> No es una página de la Ciudad de Bell Gardens &mdash; una maqueta de <a href="https://www.bellgardens.org/our-city/about-bell-gardens/aquatic-center" target="_blank" rel="noopener noreferrer">la página del Centro Acuático</a> con la alberca en un horario en vivo.</span></div>
+<div class="util"><div class="in"><span><span lang="en">View Agendas</span><span lang="es">Ver agendas</span></span><span><span lang="en">City Council Meetings</span><span lang="es">Juntas del Concejo</span></span><span><span lang="en">Talk to Us</span><span lang="es">Contáctenos</span></span><span>Measure W</span>
+  <a class="lang-en" href="?lang=es">En Español</a><a class="lang-es" href="?lang=en">In English</a></div></div>
+<header class="site"><div class="hdr">
+  <a class="brand" href="#"><img src="https://www.bellgardens.org/Project/Contents/Main/_gfx/cmn/logo.png" alt="City of Bell Gardens, California" onerror="this.parentNode.classList.add('noimg')"><span class="wm"><small>CITY OF</small><b>BELL GARDENS</b><i>California</i></span></a>
+  <nav class="nav" aria-label="Main"><span><span lang="en">Services</span><span lang="es">Servicios</span></span><span class="on"><span lang="en">Our City</span><span lang="es">Nuestra Ciudad</span></span><span><span lang="en">Government</span><span lang="es">Gobierno</span></span><span><span lang="en">Business</span><span lang="es">Negocios</span></span><span><span lang="en">I Want To…</span><span lang="es">Quiero…</span></span></nav>
+</div></header>
+<div class="banner"><img src="https://www.bellgardens.org/home/showpublishedimage/4969/638962328297070000" alt="" onerror="this.remove()"><div class="bt">Dreamers Aquatics Center</div></div>
+
+<div class="wrap"><div class="cols">
+  <nav class="menu" aria-label="About Bell Gardens">
+    <a class="top" href="#"><span lang="en">About Bell Gardens</span><span lang="es">Acerca de Bell Gardens</span></a>
+    <a href="#">Bell Gardens</a><a href="#"><span lang="en">Document Central</span><span lang="es">Documentos</span></a><a href="#"><span lang="en">Media Suite</span><span lang="es">Medios</span></a>
+    <a href="#"><span lang="en">Municipal Code</span><span lang="es">Código Municipal</span></a><a href="#"><span lang="en">Calendar</span><span lang="es">Calendario</span></a>
+    <a class="here" href="#"><span lang="en">Aquatics Center</span><span lang="es">Centro Acuático</span></a>
+    <a class="sub" href="#now"><span lang="en">Open now</span><span lang="es">Abierto ahora</span></a><a class="sub" href="#week"><span lang="en">This week</span><span lang="es">Esta semana</span></a>
+    <a class="sub" href="#lanes"><span lang="en">Lane by lane</span><span lang="es">Por carril</span></a><a class="sub" href="#programs"><span lang="en">Programs & fees</span><span lang="es">Programas y precios</span></a>
+    <a href="#"><span lang="en">Talk to Us</span><span lang="es">Contáctenos</span></a>
+  </nav>
+  <main class="sheet">
+    <div class="crumbs"><span lang="en">Our City » About Bell Gardens</span><span lang="es">Nuestra Ciudad » Acerca de Bell Gardens</span></div>
+    <h1>Dreamers Aquatics Center</h1>
+    <p class="sub-h"><span lang="en">John Anson Ford Park</span><span lang="es">Parque John Anson Ford</span> · 7950 Scout Ave, Bell Gardens, CA 90201 · <b>(562) 806-POOL (7665)</b></p>
+
+    <div class="top2">
+      <section class="now" id="now" aria-live="polite">
+        <h2><span lang="en">Right now</span><span lang="es">Ahora mismo</span></h2>
+        <div id="today" data-view="tCWlfEHlMkThb1CBUvtswc" data-pool="dreamers"><p class="muted"><span lang="en">Loading today’s schedule…</span><span lang="es">Cargando el horario de hoy…</span></p></div>
+      </section>
+      <aside class="hours">
+        <h2><span lang="en">Fall hours</span><span lang="es">Horario de otoño</span></h2>
+        <dl>
+          <dt><span lang="en">Monday–Friday</span><span lang="es">Lunes a viernes</span></dt><dd>6:30am – 8pm</dd>
+          <dt><span lang="en">Saturday</span><span lang="es">Sábado</span></dt><dd>8am – 4pm</dd>
+          <dt><span lang="en">Sunday</span><span lang="es">Domingo</span></dt><dd><span lang="en">Closed</span><span lang="es">Cerrado</span></dd>
+        </dl>
+        <p class="closed"><b><span lang="en">Closed</span><span lang="es">Cerrado</span>:</b> <span lang="en">Nov 14–15 (swim competition) and Nov 26–28 (Thanksgiving).</span><span lang="es">14–15 de nov. (competencia de natación) y 26–28 de nov. (Acción de Gracias).</span></p>
+        <p class="muted small"><span lang="en">First visit? Everyone signs a waiver. Children under 48 inches or under 6 swim with a parent or guardian. Bring your own lock.</span><span lang="es">¿Primera visita? Todos firman una exención. Menores de 48 pulgadas o de 6 años nadan con su padre, madre o tutor. Traiga su propio candado.</span></p>
+      </aside>
+    </div>
+
+    <h2 id="week-h"><span lang="en">This week</span><span lang="es">Esta semana</span></h2>
+    <div id="week" data-view="tCWlfEHlMkThb1CBUvtswc"><p class="muted"><span lang="en">Loading the week…</span><span lang="es">Cargando la semana…</span></p></div>
+
+    <h2 id="lanes"><span lang="en">Lane by lane</span><span lang="es">Por carril</span></h2>
+    <p class="muted small"><span lang="en">Three heated pools: a 50-meter competition pool, an activity pool with a slide and zero-depth entry, and a warm therapy pool. Tap a day to see who is in which lane.</span><span lang="es">Tres albercas con calefacción: una de competencia de 50 metros, una recreativa con tobogán y entrada sin profundidad, y una terapéutica de agua templada. Toque un día para ver quién está en cada carril.</span></p>
+    <div class="frame"><iframe src="https://www.poolrelay.com/embed/tCWlfEHlMkThb1CBUvtswc" height="780" title="Dreamers Aquatics Center, lane by lane" loading="lazy"></iframe></div>
+
+    <h2 id="programs"><span lang="en">Programs & fees</span><span lang="es">Programas y precios</span></h2>
+    <div class="programs"><div class="program"><h3><span class="k k-lap"></span><span lang="en">Lap Swim</span><span lang="es">Nado de vueltas</span></h3><p><span lang="en">Ages 13+. Mon–Fri 6:30–9:30am and 5–7:30pm, Sat 8:30–11:30am. $1 teens and 55+, $2 adults.</span><span lang="es">13 años o más. Lun–Vie 6:30–9:30am y 5–7:30pm, sáb 8:30–11:30am. $1 adolescentes y mayores de 55, $2 adultos.</span></p></div><div class="program"><h3><span class="k k-rec"></span><span lang="en">Recreation Swim</span><span lang="es">Nado recreativo</span></h3><p><span lang="en">All ages, in the activity pool with the slide. Mon/Wed/Fri 3:30–5pm, Sat 1:45–3:45pm. $1 youth and 55+, $2 adults.</span><span lang="es">Todas las edades, en la alberca recreativa con tobogán. Lun/Mié/Vie 3:30–5pm, sáb 1:45–3:45pm. $1 jóvenes y mayores de 55, $2 adultos.</span></p></div><div class="program"><h3><span class="k k-learn"></span><span lang="en">Swim Lessons</span><span lang="es">Clases de natación</span></h3><p><span lang="en">6 months to adult. Session 2: Tue/Thu Oct 13–Nov 5 and Sat Oct 17–Nov 7. $35 residents, $45 non-residents. An instructor evaluates each swimmer before registration.</span><span lang="es">De 6 meses a adultos. Sesión 2: mar/jue 13 oct–5 nov y sáb 17 oct–7 nov. $35 residentes, $45 no residentes. Un instructor evalúa a cada nadador antes de inscribirse.</span></p></div><div class="program"><h3><span class="k k-fit"></span><span lang="en">Aqua Aerobics</span><span lang="es">Aqua aeróbicos</span></h3><p><span lang="en">Ages 13+. Mon/Wed/Fri 6:30–7:15pm. $1 teens and 55+, $2 adults.</span><span lang="es">13 años o más. Lun/Mié/Vie 6:30–7:15pm. $1 adolescentes y mayores de 55, $2 adultos.</span></p></div><div class="program"><h3><span class="k k-fit"></span><span lang="en">Low Impact Aerobics</span><span lang="es">Aeróbicos de bajo impacto</span></h3><p><span lang="en">Ages 40+: walking, swimming and gentle dance in the water. Mon–Fri 8:45–9:30am. $1 seniors, $2 adults.</span><span lang="es">Mayores de 40: caminar, nadar y baile suave en el agua. Lun–Vie 8:45–9:30am. $1 mayores, $2 adultos.</span></p></div><div class="program"><h3><span class="k k-learn"></span><span lang="en">Southeast Aquatics Dolphins</span><span lang="es">Equipo Southeast Aquatics Dolphins</span></h3><p><span lang="en">Swim team, ages 5–18. Mon–Thu 5–7:30pm. $65/month residents, $95 non-residents.</span><span lang="es">Equipo de natación, 5 a 18 años. Lun–Jue 5–7:30pm. $65 al mes residentes, $95 no residentes.</span></p></div><div class="program"><h3><span class="k k-learn"></span><span lang="en">Water Polo</span><span lang="es">Waterpolo</span></h3><p><span lang="en">Drop-in, ages 13+: Fri 6:30–7:30pm, $1–$2. Splash-Ball, ages 6–13: Tue/Thu 6:15–7pm, $35/$45 a month.</span><span lang="es">Libre, 13 años o más: vie 6:30–7:30pm, $1–$2. Splash-Ball, 6 a 13 años: mar/jue 6:15–7pm, $35/$45 al mes.</span></p></div><div class="program"><h3><span class="k k-learn"></span><span lang="en">S.T.A.R.S. Swim Program</span><span lang="es">Programa S.T.A.R.S.</span></h3><p><span lang="en">Inclusive swimming for all abilities, age 1 to adult. Mon/Wed 5:30–6:30pm, 30-minute classes. $95.</span><span lang="es">Natación inclusiva para todas las capacidades, de 1 año a adultos. Lun/Mié 5:30–6:30pm, clases de 30 minutos. $95.</span></p></div></div>
+    <p class="muted small"><span lang="en">Resident registration for lessons opens before open registration; open registration is the first day of class. Session 3 dates have not been posted.</span><span lang="es">La inscripción para residentes abre antes de la inscripción general, que es el primer día de clase. Las fechas de la Sesión 3 aún no se han publicado.</span></p>
+
+    <div class="replaces">
+      <h2><span lang="en">What this replaces</span><span lang="es">Lo que esto reemplaza</span></h2>
+      <ul><li><span lang="en"><b>“Coming soon,” a year after opening.</b> The city's Aquatics Center page still opens on construction: “The new Aquatics Center at Ford Park is coming soon! Updates as of August 25, 2025.” It ends by saying programs continue at Chet Holifield Pool in Montebello.</span><span lang="es"><b>“Próximamente,” un año después de abrir.</b> La página del centro todavía empieza con la construcción: “¡El nuevo Centro Acuático en Ford Park llegará pronto! Actualizado al 25 de agosto de 2025.” Al final dice que los programas siguen en la alberca Chet Holifield de Montebello.</span></li><li><span lang="en"><b>A schedule you can't read.</b> The whole fall schedule is one picture of two brochure pages. It can't be searched, zoomed cleanly on a phone, read aloud by a screen reader, or translated.</span><span lang="es"><b>Un horario que no se puede leer.</b> Todo el horario de otoño es una sola imagen de dos páginas del folleto. No se puede buscar, ampliar bien en el teléfono, leer con un lector de pantalla ni traducir.</span></li><li><span lang="en"><b>“Click below to read in English and Spanish.”</b> The link goes to the city's home page, and the picture below it is in English only. In a city where most residents speak Spanish at home, this page switches languages with one tap.</span><span lang="es"><b>“Haga clic abajo para leer en inglés y español.”</b> El enlace lleva a la página principal de la ciudad, y la imagen de abajo solo está en inglés. En una ciudad donde la mayoría habla español en casa, esta página cambia de idioma con un toque.</span></li><li><span lang="en"><b>Four names, three places.</b> The pool is the “Aquatics Center,” “Dreamer's Aquatic Center,” “John Anson Ford Park Dreamers Aquatics Center” and “Regional Aquatics Center”. Its schedule is filed under Our City › About Bell Gardens, while lessons and rec swim are under Government › City Departments. The lessons page has fees and registration dates but no class times.</span><span lang="es"><b>Cuatro nombres, tres lugares.</b> La alberca aparece como “Aquatics Center”, “Dreamer's Aquatic Center”, “John Anson Ford Park Dreamers Aquatics Center” y “Regional Aquatics Center”. El horario está en Nuestra Ciudad › Acerca de Bell Gardens, y las clases y el nado recreativo en Gobierno › Departamentos. La página de clases tiene precios y fechas de inscripción, pero no horarios.</span></li><li><span lang="en"><b>Who's in which water, and when.</b> On weekday evenings, lap swim shares the competition pool with the Dolphins swim team, Splash-Ball and water polo. The brochure lists each one separately and never says how the pool is divided. Here every program has its place, and the lane split is our estimate until the city publishes its own.</span><span lang="es"><b>Quién está en cada alberca, y cuándo.</b> En las tardes entre semana, el nado de vueltas comparte la alberca de competencia con el equipo Dolphins, Splash-Ball y waterpolo. El folleto los enumera por separado y nunca dice cómo se divide la alberca. Aquí cada programa tiene su lugar; la división de carriles es nuestra estimación hasta que la ciudad publique la suya.</span></li><li><span lang="en"><b>One schedule, kept current.</b> The city enters each program once. This page, the week table, the lane calendar and the “open now” card update together, and a closure shows here the day it's entered.</span><span lang="es"><b>Un solo horario, siempre al día.</b> La ciudad registra cada programa una vez. Esta página, la tabla de la semana, el calendario por carriles y el aviso de “abierto ahora” se actualizan juntos, y un cierre aparece aquí el mismo día.</span></li></ul>
+    </div>
+
+    <details class="history"><summary><span lang="en">Building the Aquatics Center: costs, funding and construction updates</span><span lang="es">La construcción del Centro Acuático: costos, fondos y avances</span></summary>
+      <p><span lang="en">The City awarded the construction contract to Bernards Bros. Inc. on January 22, 2024 ($26,334,000), for an estimated total project cost of $31.27 million: $3.17 million in CDBG funds, $6 million from the Land and Water Conservation Fund (State Parks), $2 million from Assemblymember Cristina Garcia, $1.5 million from HUD, $4 million from Supervisor Janice Hahn, and $14.6 million from the City’s General Fund.</span><span lang="es">La Ciudad otorgó el contrato de construcción a Bernards Bros. Inc. el 22 de enero de 2024 ($26,334,000), con un costo total estimado de $31.27 millones: $3.17 millones de fondos CDBG, $6 millones del Land and Water Conservation Fund (Parques Estatales), $2 millones de la asambleísta Cristina Garcia, $1.5 millones de HUD, $4 millones de la supervisora Janice Hahn y $14.6 millones del Fondo General de la Ciudad.</span></p>
+      <p><span lang="en">Construction ran from the Notice to Proceed on April 9, 2024 to the grand opening in fall 2025. The construction photo and video log stays on the city’s page.</span><span lang="es">La construcción comenzó con la orden de inicio del 9 de abril de 2024 y terminó con la gran inauguración en el otoño de 2025. El registro de fotos y videos sigue en la página de la ciudad.</span></p>
+    </details>
+  </main>
+</div></div>
+<footer class="site"><div class="in">
+  <div><h4>City of Bell Gardens</h4><p>7100 Garfield Ave<br>Bell Gardens, CA 90201<br>(562) 806-7700</p></div>
+  <div><h4><span lang="en">Aquatics Center</span><span lang="es">Centro Acuático</span></h4><p>7950 Scout Ave<br>(562) 806-POOL (7665)</p></div>
+  <div><h4><span lang="en">About this preview</span><span lang="es">Sobre esta vista previa</span></h4><p><span lang="en">Built to demonstrate embedded <a href="https://www.poolrelay.com" target="_blank" rel="noopener">Pool Relay</a> schedules. Not operated by or affiliated with the City of Bell Gardens. Schedule read from the city’s fall 2026 brochure on October 22, 2026.</span><span lang="es">Hecha para mostrar horarios de <a href="https://www.poolrelay.com" target="_blank" rel="noopener">Pool Relay</a>. No la opera ni está afiliada a la Ciudad de Bell Gardens. Horario tomado del folleto de otoño 2026 de la ciudad el 22 de octubre de 2026.</span></p></div>
+</div></footer>
+<script>window.POOLS = [{"slug": "dreamers", "name": "Dreamers Aquatics Center", "area": "Bell Gardens", "kind": "yearRound", "address": "7950 Scout Ave, Bell Gardens, CA 90201", "phone": "(562) 806-7665", "lat": 33.9688, "lng": -118.1523, "facility": "Dreamers Aquatics Center", "href": "#", "hideHead": true}];</script>
+<script src="finder.js"></script>
+</body>
+</html>
