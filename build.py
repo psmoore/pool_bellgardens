@@ -24,7 +24,7 @@ I18N = {
     "Done for today": "Terminado por hoy", "Next": "Próximo", "Nothing scheduled": "Nada programado", "today": "hoy",
     "No hours published": "Sin horario publicado", "through": "hasta el", "all": "los", "of": "de", "lanes": "carriles",
     "Lap swim": "Vueltas", "Rec swim": "Recreativo", "Water fitness": "Ejercicio acuático", "Lessons & teams": "Clases y equipos",
-    "Swim lessons": "Clases de natación", "classes": "clases",
+    "Swim lessons": "Clases de natación", "classes": "clases", "noon": "mediodía",
 }
 
 PROGRAMS = [  # (kind, en title, es title, en body, es body)

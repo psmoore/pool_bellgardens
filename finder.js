@@ -210,7 +210,7 @@
       const d = dayOf(pool, evs, TODAY, "any");
       single.innerHTML = `<div class="pool"><div>
         <p class="state ${d.state}" style="margin-top:0"><span class="dot"></span>${esc(d.line)}</p>
-        ${d.sessions.length ? timeline(d.sessions, TODAY) + `<div class="tlscale"><span>5am</span><span>noon</span><span>5pm</span><span>10pm</span></div>` + sessionList(d.sessions, TODAY) : ""}
+        ${d.sessions.length ? timeline(d.sessions, TODAY) + `<div class="tlscale"><span>5am</span><span>${T("noon")}</span><span>5pm</span><span>10pm</span></div>` + sessionList(d.sessions, TODAY) : ""}
       </div></div>`;
     }).catch(() => { single.innerHTML = `<p class="muted">The live schedule didn't load. The calendar below has every session.</p>`; });
     if (!document.getElementById("week")) return;
