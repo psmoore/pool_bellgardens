@@ -25,35 +25,49 @@ I18N = {
     "No hours published": "Sin horario publicado", "through": "hasta el", "all": "los", "of": "de", "lanes": "carriles",
     "Lap swim": "Vueltas", "Rec swim": "Recreativo", "Water fitness": "Ejercicio acuático", "Lessons & teams": "Clases y equipos",
     "Swim lessons": "Clases de natación", "classes": "clases", "noon": "mediodía",
+    "and": "y", "Closed": "Cerrado", "Starts": "Empieza el", "now": "ahora", "now, no reopening date yet": "ahora, sin fecha de reapertura",
+    "Nothing scheduled in the next four weeks": "Nada programado en las próximas cuatro semanas", "Also": "También",
+    "See the calendar for times.": "Vea el calendario para los horarios.",
+    "swim competition": "competencia de natación", "Thanksgiving": "Acción de Gracias",
 }
 
+# Program cards: who it's for and what it costs. When it runs is never typed here: each {Title}
+# becomes a live span that finder.js fills from that Pool Relay session's bookings.
 PROGRAMS = [  # (kind, en title, es title, en body, es body)
     ("lap", "Lap Swim", "Nado de vueltas",
-     "Ages 13+. Mon–Fri 6:30–9:30am and 5–7:30pm, Sat 8:30–11:30am. $1 teens and 55+, $2 adults.",
-     "13 años o más. Lun–Vie 6:30–9:30am y 5–7:30pm, sáb 8:30–11:30am. $1 adolescentes y mayores de 55, $2 adultos."),
+     "Ages 13+. {Lap Swim}. $1 teens and 55+, $2 adults.",
+     "13 años o más. {Lap Swim}. $1 adolescentes y mayores de 55, $2 adultos."),
     ("rec", "Recreation Swim", "Nado recreativo",
-     "All ages, in the activity pool with the slide. Mon/Wed/Fri 3:30–5pm, Sat 1:45–3:45pm. $1 youth and 55+, $2 adults.",
-     "Todas las edades, en la alberca recreativa con tobogán. Lun/Mié/Vie 3:30–5pm, sáb 1:45–3:45pm. $1 jóvenes y mayores de 55, $2 adultos."),
+     "All ages, in the activity pool with the slide. {Recreation Swim}. $1 youth and 55+, $2 adults.",
+     "Todas las edades, en la alberca recreativa con tobogán. {Recreation Swim}. $1 jóvenes y mayores de 55, $2 adultos."),
     ("learn", "Swim Lessons", "Clases de natación",
-     "6 months to adult. Session 2: Tue/Thu Oct 13–Nov 5 and Sat Oct 17–Nov 7. $35 residents, $45 non-residents. An instructor evaluates each swimmer before registration.",
-     "De 6 meses a adultos. Sesión 2: mar/jue 13 oct–5 nov y sáb 17 oct–7 nov. $35 residentes, $45 no residentes. Un instructor evalúa a cada nadador antes de inscribirse."),
+     "6 months to adult. {Swim Lessons}. $35 residents, $45 non-residents. An instructor evaluates each swimmer before registration.",
+     "De 6 meses a adultos. {Swim Lessons}. $35 residentes, $45 no residentes. Un instructor evalúa a cada nadador antes de inscribirse."),
     ("fit", "Aqua Aerobics", "Aqua aeróbicos",
-     "Ages 13+. Mon/Wed/Fri 6:30–7:15pm. $1 teens and 55+, $2 adults.",
-     "13 años o más. Lun/Mié/Vie 6:30–7:15pm. $1 adolescentes y mayores de 55, $2 adultos."),
+     "Ages 13+. {Aqua Aerobics}. $1 teens and 55+, $2 adults.",
+     "13 años o más. {Aqua Aerobics}. $1 adolescentes y mayores de 55, $2 adultos."),
     ("fit", "Low Impact Aerobics", "Aeróbicos de bajo impacto",
-     "Ages 40+: walking, swimming and gentle dance in the water. Mon–Fri 8:45–9:30am. $1 seniors, $2 adults.",
-     "Mayores de 40: caminar, nadar y baile suave en el agua. Lun–Vie 8:45–9:30am. $1 mayores, $2 adultos."),
+     "Ages 40+: walking, swimming and gentle dance in the water. {Low Impact Aerobics}. $1 seniors, $2 adults.",
+     "Mayores de 40: caminar, nadar y baile suave en el agua. {Low Impact Aerobics}. $1 mayores, $2 adultos."),
     ("learn", "Southeast Aquatics Dolphins", "Equipo Southeast Aquatics Dolphins",
-     "Swim team, ages 5–18. Mon–Thu 5–7:30pm. $65/month residents, $95 non-residents.",
-     "Equipo de natación, 5 a 18 años. Lun–Jue 5–7:30pm. $65 al mes residentes, $95 no residentes."),
+     "Swim team, ages 5–18. {Southeast Aquatics Dolphins Swim Team}. $65/month residents, $95 non-residents.",
+     "Equipo de natación, 5 a 18 años. {Southeast Aquatics Dolphins Swim Team}. $65 al mes residentes, $95 no residentes."),
     ("learn", "Water Polo", "Waterpolo",
-     "Drop-in, ages 13+: Fri 6:30–7:30pm, $1–$2. Splash-Ball, ages 6–13: Tue/Thu 6:15–7pm, $35/$45 a month.",
-     "Libre, 13 años o más: vie 6:30–7:30pm, $1–$2. Splash-Ball, 6 a 13 años: mar/jue 6:15–7pm, $35/$45 al mes."),
-    ("learn", "S.T.A.R.S. Swim Program", "Programa S.T.A.R.S.",
-     "Inclusive swimming for all abilities, age 1 to adult. Mon/Wed 5:30–6:30pm, 30-minute classes. $95.",
-     "Natación inclusiva para todas las capacidades, de 1 año a adultos. Lun/Mié 5:30–6:30pm, clases de 30 minutos. $95."),
+     "Drop-in, ages 13+, $1–$2: {Drop-In Water Polo}. Splash-Ball, ages 6–13, $35/$45 a month: {Splash-Ball Water Polo}.",
+     "Libre, 13 años o más, $1–$2: {Drop-In Water Polo}. Splash-Ball, 6 a 13 años, $35/$45 al mes: {Splash-Ball Water Polo}."),
+    ("learn", "S.T.A.R.S. Swim Program", "Programa de natación S.T.A.R.S.",
+     "Inclusive swimming for all abilities, age 1 to adult, in 30-minute classes. {S.T.A.R.S. Swim Program}. $95.",
+     "Natación inclusiva para todas las capacidades, de 1 año a adultos, en clases de 30 minutos. {S.T.A.R.S. Swim Program}. $95."),
 ]
-cards = "".join(f'<div class="program"><h3><span class="k k-{k}"></span>{b(E(t1), E(t2))}</h3><p>{b(E(d1), E(d2))}</p></div>'
+def live_when(text):
+    """Escape a card body and turn each {Pool Relay session title} into a live span."""
+    out, rest = "", text
+    while "{" in rest:
+        pre, rest = rest.split("{", 1)
+        title, rest = rest.split("}", 1)
+        out += E(pre) + f'<span data-live="when" data-view="{VIEW}" data-pool="dreamers" data-title="{E(title)}">…</span>'
+    return out + E(rest)
+cards = "".join(f'<div class="program"><h3><span class="k k-{k}"></span>{b(E(t1), E(t2))}</h3><p>{b(live_when(d1), live_when(d2))}</p></div>'
                 for k, t1, t2, d1, d2 in PROGRAMS)
 
 REPLACES = [
@@ -137,13 +151,9 @@ doc = f"""<!doctype html>
         <div id="today" data-view="{VIEW}" data-pool="dreamers"><p class="muted">{b('Loading today’s schedule…', 'Cargando el horario de hoy…')}</p></div>
       </section>
       <aside class="hours">
-        <h2>{b('Fall hours', 'Horario de otoño')}</h2>
-        <dl>
-          <dt>{b('Monday–Friday', 'Lunes a viernes')}</dt><dd>6:30am – 8pm</dd>
-          <dt>{b('Saturday', 'Sábado')}</dt><dd>8am – 4pm</dd>
-          <dt>{b('Sunday', 'Domingo')}</dt><dd>{b('Closed', 'Cerrado')}</dd>
-        </dl>
-        <p class="closed"><b>{b('Closed', 'Cerrado')}:</b> {b('Nov 14–15 (swim competition) and Nov 26–28 (Thanksgiving).', '14–15 de nov. (competencia de natación) y 26–28 de nov. (Acción de Gracias).')}</p>
+        <h2>{b('Hours', 'Horario')}</h2>
+        <div data-live="hours" data-format="dl" data-view="{VIEW}" data-pool="dreamers"><p class="muted">…</p></div>
+        <p class="closed" data-live="closures" data-view="{VIEW}" data-pool="dreamers" hidden></p>
         <p class="muted small">{b('First visit? Everyone signs a waiver. Children under 48 inches or under 6 swim with a parent or guardian. Bring your own lock.', '¿Primera visita? Todos firman una exención. Menores de 48 pulgadas o de 6 años nadan con su padre, madre o tutor. Traiga su propio candado.')}</p>
       </aside>
     </div>
@@ -158,8 +168,8 @@ doc = f"""<!doctype html>
 
     <h2 id="programs">{b('Programs & fees', 'Programas y precios')}</h2>
     <div class="programs">{cards}</div>
-    <p class="muted small">{b('Resident registration for lessons opens before open registration; open registration is the first day of class. Session 3 dates have not been posted.',
-                              'La inscripción para residentes abre antes de la inscripción general, que es el primer día de clase. Las fechas de la Sesión 3 aún no se han publicado.')}</p>
+    <p class="muted small">{b('Times on this page come from the live schedule, the same one as the calendar above. Resident registration for lessons opens before open registration; open registration is the first day of class.',
+                              'Los horarios de esta página vienen del horario en vivo, el mismo del calendario de arriba. La inscripción para residentes abre antes de la inscripción general, que es el primer día de clase.')}</p>
 
     <div class="replaces">
       <h2>{b('What this replaces', 'Lo que esto reemplaza')}</h2>
